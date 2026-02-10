@@ -8,16 +8,20 @@
  */
 
 // FAKE AWS credentials - for secret scanning test only
+// Using more realistic-looking patterns (but still completely fake)
 const config = {
-  // These are EXAMPLE/FAKE AWS keys that match the pattern for testing
-  AWS_ACCESS_KEY_ID: "AKIAIOSFODNN7EXAMPLE",  // FAKE - for testing secret scanning
-  AWS_SECRET_ACCESS_KEY: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",  // FAKE - for testing
+  // FAKE AWS access key - realistic pattern but invalid
+  AWS_ACCESS_KEY_ID: "AKIATESTTESTTESTTEST",  // FAKE - for testing secret scanning
+  AWS_SECRET_ACCESS_KEY: "abcdef1234567890ABCDEFGHIJKLMNOPQRSTUVWX",  // FAKE - for testing
 
-  // FAKE GitHub token - for testing secret scanning  
-  GITHUB_TOKEN: "ghp_1234567890abcdefghijklmnopqrstuvwxyzAB",  // FAKE - for testing
+  // FAKE GitHub Personal Access Token - realistic pattern but invalid  
+  GITHUB_TOKEN: "ghp_abcdefghijklmnopqrstuvwxyz1234567890AB",  // FAKE - for testing
 
-  // FAKE API key - for testing secret scanning
-  API_KEY: "AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe"  // FAKE - for testing
+  // FAKE Stripe API key - realistic pattern but invalid
+  STRIPE_KEY: "sk_test_51ABCDEabcdefghijklmnopqrstuvwxyz1234567890ABCDEF",  // FAKE - for testing
+  
+  // FAKE SendGrid API key
+  SENDGRID_API_KEY: "SG.abcdefghijklmnopqrstuvw.1234567890abcdefghijklmnopqrstuvwxyzABCDEF"  // FAKE - for testing
 };
 
 // NOTE: All values above are intentionally fake and used only to trigger
